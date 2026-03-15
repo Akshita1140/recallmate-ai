@@ -1,0 +1,32 @@
+{
+  "name": "recallmate-backend",
+  "version": "1.0.0",
+  "description": "Backend service for RecallMate smart memory system, powered by Gemini AI.",
+  "main": "server.js",
+
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "gemini",
+    "ai",
+    "chrome-extension",
+    "memory"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

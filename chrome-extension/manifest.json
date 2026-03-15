@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "RecallMate Tab Sender",
+  "description": "Capture current tab title and URL and send to http://localhost:8000/analyze when the extension icon is clicked.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Send tab to RecallMate"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
